@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Skilaverkefni 1</title>
+</head>
+
+<body class="bg-llama-blue">
+  <nav class="p-6 bg-logo-background bg-cover">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center">
+        <img src="/logo_small.png" alt="logo" class="absolute mt-14">
+
+      </div>
+      <div class="hidden
+                        md:flex 
+                        md:gap-x-6
+                        md:items-center
+                        text-gray-700 
+                        font-poppins font-semibold tracking-wide text-lg
+                        ">
+        <a class="hover:text-llama-yellow transition ease-in-out duration-500" href="">Home</a>
+        <a class="hover:text-llama-yellow transition ease-in-out duration-500" href="">Menu</a>
+        <a class="hover:text-llama-yellow transition ease-in-out duration-500" href="">About Us</a>
+        <a class="hover:text-llama-yellow transition ease-in-out duration-500" href="">Contact</a>
+        <a class="          py-0
+                            px-3
+                            rounded-2xl
+                            text-llama-yellow
+                            outline 
+                            outline-4
+                            outline-llama-yellow
+                            shadow-lg
+                            hover:bg-llama-yellow
+                            hover:text-white
+                            transition-colors
+                            ease-in-out
+                            duration-300" href="">Order</a>
+      </div>
+      <div id="menu" class="font-poppins font-bold md:hidden">
+        <div id="hamburger">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </div>
+        <div id="x-hamburger" class="hidden md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+    <div id="mobile-menu" class="md:hidden slide-in
+                                     transition ease-in-out duration-500
+                                     absolute z-10 top-32 left-0
+                                     w-full 
+                                     bg-green-400
+                                     text-white/95
+                                     font-poppins font-extrabold text-2xl
+                                     ">
+      <div class="flex flex-col mx-6">
+        <a class="hover:text-orange-600 transition ease-in-out duration-500 py-2" href="">Shop</a>
+        <hr class="border-1 border-black/10 w-full" />
+        <a class="hover:text-orange-600 transition ease-in-out duration-500 py-2" href="">Services</a>
+        <hr class="border-1 border-black/10 w-full" />
+        <a class="hover:text-orange-600 transition ease-in-out duration-500 py-2" href="">About us</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <section class="md:grid md:grid-cols-2 md:min-h-screen bg-logo-background bg-cover m-6 rounded-2xl">
+    <div class=" flex flex-col  mt-28 md:pl-24 pl-14 w-11/12">
+      <h1 class="text-7xl my-12 font-bold drop-shadow-lg text-llama-brown">The Hungry Llama</h1>
+      <h2 class="text-4xl mb-16 font-semibold drop-shadow-lg text-llama-brown">Where Good Food Meets Great Company</h2>
+      <a class="py-2
+                w-52
+                mt-8
+                md:mt-24
+                grid place-items-center
+                rounded-2xl
+                outline
+              outline-llama-yellow
+              text-white
+              bg-llama-yellow
+                shadow-lg
+                hover:bg-transparent
+              hover:text-llama-yellow
+                hover: outline-4
+                text-2xl
+                font-poppins
+                font-semibold
+                transition-colors
+                ease-in-out
+                duration-300" href="">Order Here!</a>
+    </div>
+
+    <div class="h-screen md:h-auto mt-8 md:mr-10">
+      <div class="columns-1">
+        <img src="/chicken-salad.png" alt="chicken salad photo"
+          class="rounded-2xl mt-16 object-cover w-10/12 mx-auto shadow-xl">
+        </div>
+        <div class="grid grid-cols-3 m-12 pl-4 aspect-square">       
+          <img src="/chicken-wrap.png" alt="chicken salad photo" class="rounded-2xl w-36 shadow-xl">
+          <img src="/Grilled-chicken-panini.png" alt="chicken salad photo" class="rounded-2xl w-36 shadow-xl">
+          <img src="/Chicken-salad-whole-weet.png" alt="chicken salad photo" class="rounded-2xl w-36 shadow-xl"> 
+      </div>
+    </div>
+  </section>
+
+  <script src="menu.js"></script>
+</body>
+
+</html>
