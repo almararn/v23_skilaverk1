@@ -12,6 +12,9 @@ export default {
         'llama-brown': '#794f4a',
         'llama-white': '#f4eedf',
       },
+      width: {
+        '30%' : '30%',
+      },
       backgroundImage: {
         'logo-background': "url('/logo_back.png')",
       },
