@@ -18,3 +18,8 @@ menu.addEventListener('click', function() {
         console.log('slide-in-removed')
     }
 });
+
+function resetForm() {
+    document.getElementById("contactForm").reset();
+    alert("Your message has been sent!");
+  }

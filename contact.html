@@ -80,54 +80,64 @@
   </nav>
 
   <section class="lg:grid lg:grid-cols-2 bg-logo-background bg-cover sm:m-8 m-4 rounded-2xl">
-    <div class=" flex flex-col pt-4 md:pl-24 pl-5 w-11/12">
-      <h1 class="text-7xl lg:mt-28 my-12 font-bold drop-shadow-lg text-llama-brown">The Hungry Llama</h1>
-      <h2 class="text-4xl font-semibold drop-shadow-lg text-llama-brown">Where Good Food Meets Great Company</h2>
-      <div class="h-1/5"></div>
-      <a class="py-3
-                md:w-96
-                sm:w-80
-                mt-16
-                mb-12
-                md:mt-24
-                grid place-items-center
-                rounded-2xl
-                outline
-              outline-llama-yellow
-              text-white
-              bg-llama-yellow
-                shadow-lg
-                hover:bg-transparent
-              hover:text-llama-yellow
-                hover: outline-4
-                text-2xl
-                font-semibold
-                transition-colors
-                ease-in-out
-                duration-300
-                " href="">Order Here!</a>
+    <div class="my-auto pl-12 pr-12 pb-4 pt-24 lg:pt-0 lg:pb-0 lg:pr-24">
+      <h1 class="text-center text-llama-brown text-xl font-semibold">Drop us a line!<br>And we well respond with
+        pleasure.</h1>
     </div>
-
-    <div class="pb-1 md:m-8 m-6 lg:w-10/12">
-      <div class="">
-        <img src="/chicken-salad.png" alt="chicken salad photo"
-          class="rounded-2xl mt-16 object-cover aspect-square  mx-auto shadow-xl">
-        <div class="flex justify-between my-12">
-          <img src="/chicken-wrap.png" alt="chicken wrap" class="rounded-2xl shadow-xl w-30%">
-          <img src="/Grilled-chicken-panini.png" alt="grilled chicken" class="rounded-2xl shadow-xl w-30%">
-          <img src="/Chicken-salad-whole-weet.png" alt="chicken salad" class="rounded-2xl shadow-xl w-30%">
+    <div class="p-8 lg:p-12 xl:p-16">
+      <form id="contactForm" class="bg-logo-background shadow-lg rounded-xl px-8 pt-6 pb-8 mb-4">
+        <div class="relative pt-2 pb-6">
+          <label class="block text-llama-brown text-sm font-bold mb-2">
+            Choose department
+          </label>
+          <select
+            class="block appearance-none w-full bg-white border px-3 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+            <option>General request</option>
+            <option>Restaurants</option>
+            <option>Office</option>
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
+            <svg class="mt-3 h-4 w-4 fill-llama-brown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </div>
         </div>
-      </div>
+        <div class="mb-4">
+          <label class="block text-llama-brown text-sm font-bold mb-2" for="username">
+            Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username" type="text" placeholder="">
+        </div>
+        <div class="mb-4">
+          <label class="block text-llama-brown text-sm font-bold mb-2" for="email">
+            E-mail
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="email" type="email" placeholder="">
+        </div>
+        <div>
+          <label class="block text-llama-brown text-sm font-bold mb-2" for="email">
+            Message
+          </label>
+          <textarea id="message" rows="4"
+            class="shadow appearance-none border rounded w-full py-2 px-3 mb-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="Write your thoughts here..."></textarea>
+        </div>
+        
+        <div class="text-right">
+          <button
+            class="bg-llama-brown hover:bg-llama-yellow text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="button" onclick="resetForm()">
+            Send
+          </button>
+        </div>
+      </form>
     </div>
   </section>
-  <section>
-    <div class="md:flex justify-between md:px-8 md:mb-8 md:mr-16 px-4 mb-6">
-      <img src="/Classic-cob-chicken.png" alt="buffolo chicken" class="rounded-2xl shadow-xl md:w-4/12">
-      <img src="/buffalo-chicken-bowl.png" alt="classic cob chicken"
-        class="rounded-2xl shadow-xl md:w-4/12 md:mx-8 md:my-0 my-6">
-      <img src="/Southwest-chicken.png" alt="southwest chicken" class="rounded-2xl shadow-xl md:w-4/12">
-    </div>
-  </section>
+
   <section class="md:grid md:grid-cols-2 bg-logo-background bg-cover ">
     <div class="pt-10 md:pl-12 pl-8 pb-10 text-llama-brown">
       <h3 class="text-2xl font-bold leading-7">The Hungry Llama</h3>
