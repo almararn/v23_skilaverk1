@@ -5,6 +5,9 @@ export default {
     "./about.html",
     "./contact.html",
     "./menu.html",
+    "./order.html",
+    "./footer.js",
+    "./header.js",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
