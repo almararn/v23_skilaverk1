@@ -10,8 +10,8 @@ document.write(`
               md:flex 
               md:gap-x-6
               md:items-center
-            text-gray-700 
-              font-semibold tracking-wide text-lg
+            text-llama-brown 
+              font-bold tracking-wide text-lg
               ">
     <a class="hover:text-llama-yellow transition ease-in-out duration-500" href="../">Home</a>
     <a class="hover:text-llama-yellow transition ease-in-out duration-500" href="/menu.html">Menu</a>
@@ -58,13 +58,13 @@ document.write(`
                              ">
   <div class="flex flex-col mx-6">
     <a class="hover:text-llama-yellow transition ease-in-out duration-500 py-2" href="../">Home</a>
-    <hr class="border-1 border-black/10 w-full" />
+    <hr class="border-1 border-llama-brown/30 w-full" />
     <a class="hover:text-llama-yellow transition ease-in-out duration-500 py-2" href="/menu.html">Menu</a>
-    <hr class="border-1 border-black/10 w-full" />
+    <hr class="border-1 border-llama-brown/30 w-full" />
     <a class="hover:text-llama-yellow transition ease-in-out duration-500 py-2" href="/about.html">About Us</a>
-    <hr class="border-1 border-black/10 w-full" />
+    <hr class="border-1 border-llama-brown/30 w-full" />
     <a class="hover:text-llama-yellow transition ease-in-out duration-500 py-2" href="/contact.html">Contact</a>
-    <hr class="border-1 border-black/10 w-full" />
+    <hr class="border-1 border-llama-brown/30 w-full" />
     <a class="hover:text-llama-yellow transition ease-in-out duration-500 py-2" href="/order.html">Order</a>
     </div>
 

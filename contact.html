@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <title>The Hungry Llama</title>
@@ -19,13 +18,17 @@
         pleasure.</h1>
     </div>
     <div class="p-2 sm:p-8 lg:p-12 xl:p-16">
-      <form id="contactForm" class="bg-logo-background shadow-lg rounded-xl px-8 2xl:mx-12 pt-6 pb-8 mb-4 sm:border-8 border-llama-brown">
+      <form id="contactForm" class="bg-logo-background shadow-lg rounded-xl
+                                    sm:border-8 border-llama-brown
+                                    px-8 2xl:mx-12 pt-6 pb-8 mb-4 ">
         <div class="relative pt-2 pb-6">
           <label class="block text-llama-brown text-sm font-bold mb-2">
             Choose department
           </label>
-          <select
-            class="block appearance-none w-full bg-white border px-3 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+          <select class="block appearance-none w-full px-3 py-2 pr-8
+                 bg-white border rounded shadow leading-tight
+                   focus:outline-none focus:shadow-outline
+                   ">
             <option>General request</option>
             <option>Restaurants</option>
             <option>Office</option>
@@ -40,31 +43,30 @@
           <label class="block text-llama-brown text-sm font-bold mb-2" for="username">
             Name
           </label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username" type="text" placeholder="">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 
+            text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text"
+            placeholder="">
         </div>
         <div class="mb-4">
           <label class="block text-llama-brown text-sm font-bold mb-2" for="email">
             E-mail
           </label>
-          <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email" type="email" placeholder="">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 
+            text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email"
+            placeholder="">
         </div>
         <div>
           <label class="block text-llama-brown text-sm font-bold mb-2" for="email">
             Message
           </label>
-          <textarea id="message" rows="4"
-            class="shadow appearance-none border rounded w-full py-2 px-3 mb-6 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          <textarea id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 mb-6 
+            text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             placeholder="Write your thoughts here..."></textarea>
         </div>
 
         <div class="text-right">
-          <button
-            class="bg-llama-brown hover:bg-llama-yellow text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="button" onclick="resetForm()">
+          <button class="bg-llama-brown hover:bg-llama-yellow text-white 
+            font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onclick="resetForm()">
             Send
           </button>
         </div>
@@ -72,23 +74,22 @@
     </div>
   </section>
 
-      <!--Modal-->
-      <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-        <div
-            class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto sm:mb-14 mb-28">
-            <div class="modal-content py-4 text-left px-6 text-llama-brown">
-                <div class="py-3">
-                    <p class="text-2xl font-bold">Your message has been sent</p>
-                    <p>We will reply to you shortly</p>
-                </div>
-                <div class="flex justify-end pt-2">
-                    <button
-                        class="modal-close px-4 text-white bg-llama-brown p-3 rounded-lg hover:bg-llama-yellow">Close</button>
-                </div>
-            </div>
+  <!--Modal-->
+  <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+    <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+    <div
+      class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto sm:mb-14 mb-28">
+      <div class="modal-content py-4 text-left px-6 text-llama-brown">
+        <div class="py-3">
+          <p class="text-2xl font-bold">Your message has been sent</p>
+          <p>We will reply to you shortly</p>
         </div>
+        <div class="flex justify-end pt-2">
+          <button class="modal-close px-4 text-white bg-llama-brown p-3 rounded-lg hover:bg-llama-yellow">Close</button>
+        </div>
+      </div>
     </div>
+  </div>
 
   <script src="footer.js"></script>
 
